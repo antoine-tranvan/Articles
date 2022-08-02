@@ -80,8 +80,13 @@ export default {
       let tempList = this.articles;
       console.log("templist", tempList);
 
-      tempList = tempList.filter((article) => {
-        return article.title.toLowerCase().includes(this.search.toLowerCase());
+      tempList = tempList.filter((element) => {
+        return element.title.toLowerCase().indexOf(this.search.toLowerCase()) >=
+          0
+          ? true
+          : element.slug.toLowerCase().indexOf(this.search.toLowerCase()) >= 0
+          ? true
+          : false;
       });
 
       tempList = tempList.sort((a, b) => {
