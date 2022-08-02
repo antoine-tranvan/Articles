@@ -123,6 +123,7 @@ export default {
 .articleTitle {
   margin: 10px;
   font-size: 25px;
+  font-weight: bold;
 }
 .articleDetail {
   margin-left: 10px;
@@ -131,6 +132,7 @@ export default {
 }
 .subTitle {
   font-size: 20px;
+  font-weight: bold;
 }
 .v-card--reveal {
   bottom: 0;
