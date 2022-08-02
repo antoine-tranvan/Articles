@@ -14,7 +14,7 @@ const routes = [
     path: "/articles",
     name: "articles",
     component: () =>
-      import(/* webpackChunkName: "bundle.heroes" */ "../views/Articles.vue"),
+      import(/* webpackChunkName: "bundle.articles" */ "../views/Articles.vue"),
   },
   {
     path: "/articles/:id",
@@ -22,14 +22,14 @@ const routes = [
     props: parseProps,
     component: () =>
       import(
-        /* webpackChunkName: "bundle.heroes" */ "../views/ArticleDetail.vue"
+        /* webpackChunkName: "bundle.articles" */ "../views/ArticleDetail.vue"
       ),
   },
   {
     path: "/surprise",
     name: "Surprise",
     component: () =>
-      import(/* webpackChunkName: "bundle.heroes" */ "../views/Surprise.vue"),
+      import(/* webpackChunkName: "bundle.articles" */ "../views/Surprise.vue"),
   },
 ];
 

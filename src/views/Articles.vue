@@ -78,7 +78,7 @@ export default {
     ...mapState(["articles"]),
     filteredList() {
       let tempList = this.articles;
-      console.log("templist", tempList);
+      // console.log("templist", tempList);
 
       tempList = tempList.filter((element) => {
         return element.title.toLowerCase().indexOf(this.search.toLowerCase()) >=

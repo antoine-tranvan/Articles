@@ -26,7 +26,7 @@ const mutations = {
           reveal: false,
         });
       }
-      console.log("reveal - creation", reveal);
+      // console.log("reveal - creation", reveal);
     }
     state.reveal = reveal;
   },
